@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<style>
+.button{
+  width: 100px;
+  font-size: 18;
+  font-weight: bold;
+  font-style: italic;
+  font-stretch: condensed;
+  font-family: monospace;
+}
+</style>
+
+<body>
+  <h> Largest number tester </h><br>
+
+<div class="container">
+
+<input type="number" id="x" required></input><br>
+<input type="number" id="y" required></input><br>
+<input type="number" id="z" required></input><br>
+<input type="button" onclick= "compare()" class="button" value="submit"></input>
+</div>
+<script type="text/javascript">
+function compare() {
+  first = document.getElementById("x").value;
+  second = document.getElementById("y").value;
+  third =  document.getElementById("z").value;
+     console.log( Math.max(first, second, third))
+}
+</script>
+
+</body>
+</html>
